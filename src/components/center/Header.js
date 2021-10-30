@@ -1,26 +1,48 @@
 import React from "react";
+import "../../css/header.css";
+import "../../fonts/creattionex/stylesheet.css";
 
 const styles = {
-  container: { display: "inline-grid", gridTemplateColumns: "1fr 1fr 1fr" },
+  container: {
+    display: "inline-grid",
+    gridTemplateColumns: "1fr 1fr 1fr",
+    marginBottom: "30px",
+    marginTop: "100px",
+  },
+  workLink: {
+    justifySelf: "left",
+  },
+  resumeLink: {
+    justifySelf: "right",
+  },
+  links: {
+    justifySelf: "center",
+  },
 };
 
 const Header = () => {
   return (
     <div style={styles.container}>
-      <div>
+      <div style={styles.workLink}>
         <a rel='hel' href='http://google.com'>
-          work
+          {/* work */}
         </a>
       </div>
-      <div>
-        <i class='fab fa-github'></i>
-        <i class='fab fa-github'></i>
-        <i class='fab fa-github'></i>
-        <i class='fab fa-github'></i>
+      <div style={styles.links}>
+        {/* <a href='https://github.com/chyoon2?tab=repositories'>
+          <i class='fab fa-github-square'></i>
+        </a>
+        <a href='https://www.linkedin.com/in/chrisyoonseattle/'>
+          <i class='fab fa-linkedin'></i>
+        </a>
+        <a href='https://www.instagram.com/birthday_chris'>
+          <i class='fab fa-instagram-square'></i>
+        </a> */}
       </div>
-      <div>
+
+      <div style={styles.resumeLink}>
         <a rel='lo' href='http://google.com'>
-          resume
+          {/* resume */}
         </a>
       </div>
     </div>

@@ -1,14 +1,22 @@
 import React from "react";
 
-const style = {
+const styles = {
   container: {
     display: "grid",
     gridTemplateColumns: "1fr 1fr 1fr",
-    gridTemplateAreas: "Header Header",
+  },
+  item: {
+    border: "solid .5px black",
   },
 };
 const Interests = () => {
-  return <div>Interests</div>;
+  return (
+    <div style={styles.container}>
+      {/* <div style={styles.item}>Interests</div>
+      <div style={styles.item}>Interests</div>
+      <div style={styles.item}>Interests</div> */}
+    </div>
+  );
 };
 
 export default Interests;

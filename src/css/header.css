@@ -1,0 +1,12 @@
+.special-link, .special-link:visited, .special-link:hover, .special-link:active {
+  color: inherit;  
+}
+a, a:visited, a:hover, a:active {
+  color: rgb(216, 115, 115);
+}
+.bike{
+  /* background-image: url("../img/bike.png"); */
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: cover;
+}
