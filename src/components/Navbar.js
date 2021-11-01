@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const navbar = () => {
+const navbar = ({ toggle }) => {
   return (
     <nav className='flex justify-between items-center h-16 bg-white text-black relative font-sans'>
       <Link className='pl-8 font-bold' to='/'>
         Chris Yoon
       </Link>
-      <div className='px-4 cursor-pointer sm:hidden'>
+      <div className='px-4 cursor-pointer sm:hidden' onClick={toggle}>
         <svg
           className='w-6 h-6'
           fill='none'
@@ -26,16 +26,16 @@ const navbar = () => {
         <Link className='p-4' to='/'>
           Home
         </Link>
-        <Link className='p-4' to='/'>
+        <Link className='p-4' to='/menu'>
           Menu
         </Link>
-        <Link className='p-4' to='/'>
+        <Link className='p-4' to='/about'>
           About
         </Link>
-        <Link className='p-4' to='/'>
+        <Link className='p-4' to='/projects'>
           Projects
         </Link>
-        <Link className='p-4' to='/'>
+        <Link className='p-4' to='/contact'>
           Contact
         </Link>
       </div>
