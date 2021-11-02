@@ -30,13 +30,13 @@ const Header = () => {
       </div>
       <div style={styles.links}>
         {/* <a href='https://github.com/chyoon2?tab=repositories'>
-          <i class='fab fa-github-square'></i>
+          <i className='fab fa-github-square'></i>
         </a>
         <a href='https://www.linkedin.com/in/chrisyoonseattle/'>
-          <i class='fab fa-linkedin'></i>
+          <i className='fab fa-linkedin'></i>
         </a>
         <a href='https://www.instagram.com/birthday_chris'>
-          <i class='fab fa-instagram-square'></i>
+          <i className='fab fa-instagram-square'></i>
         </a> */}
       </div>
 
