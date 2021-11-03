@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import srcontactphoto from "../../img/srcontactphoto.jpg";
 import "../../css/index.css";
+import { Link } from "react-router-dom";
 
 const styles = {
   image: {
@@ -53,13 +54,17 @@ const Contact = () => {
 
         <img style={styles.image} alt='' src={srcontactphoto} />
         <div style={styles.large}>CONTACT</div>
-        <input
+        <Link
           type='button'
           id='email'
           style={styles.email}
           value='chy.yoon@gmail.com'
-          onclick="window.location.href='mailto:chyyoon@gmail.com?subject=Comments about the color blue';"
-        />
+          onClick={(e) => {
+            window.location = "mailto:chy.yoon@gmail.com";
+            e.preventDefault();
+          }}>
+          chy.yoon@gmail.com
+        </Link>
       </div>
     </>
   );

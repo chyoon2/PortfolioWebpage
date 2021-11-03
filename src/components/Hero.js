@@ -9,6 +9,9 @@ const Hero = () => {
       </h1>
       <Link
         to='/'
+        onclick={() => {
+          console.log("help");
+        }}
         className='py-3 px-10 bg-yellow-500 rounded-full text-3xl hover:bg-yellow-300 transition duration-300 ease-in-out flex items-center animate-bounce '>
         Projects
       </Link>
