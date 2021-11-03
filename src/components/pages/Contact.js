@@ -58,7 +58,8 @@ const Contact = () => {
           id='email'
           style={styles.email}
           value='chy.yoon@gmail.com'
-          onclick="window.open('mailto:chy.yoon@gmail.com?subject=Howdy!');"></input>
+          onclick="window.location.href='mailto:chyyoon@gmail.com?subject=Comments about the color blue';"
+        />
       </div>
     </>
   );
