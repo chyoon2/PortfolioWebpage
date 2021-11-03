@@ -3,30 +3,52 @@ import { Element } from "react-scroll";
 
 const content = () => {
   return (
-    <Element
-      className='grid justify-items-center sm: grid-cols-1 md:grid-cols-2 lg:grid-cols-3'
+    <div
+      className='grid h-auto justify-items-center items-center sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xlg:grid-cols-4 mb-14 overflow-auto'
       id='projects'>
-      <div className='card-zoom'>
-        <div className='card-zoom-image'></div>
-        <div className='card-zoom-image bg-insta'></div>
-        <h1 className='card-zoom-text'>InstaClone</h1>
+      <div className='relative'>
+        <div className='card-zoom'>
+          <div className='card-zoom-image'></div>
+          <div className='card-zoom-image bg-insta'></div>
+          <h1 className='card-zoom-text'>InstaClone</h1>
+        </div>
       </div>
-      <div className='card-zoom'>
-        <div className='card-zoom-image'></div>
-        <div className='card-zoom-image bg-insta'></div>
-        <h1 className='card-zoom-text'>Mobile App</h1>
+      <div className='relative'>
+        <div className='card-zoom'>
+          <div className='card-zoom-image'></div>
+          <div className='card-zoom-image bg-insta'></div>
+          <h1 className='card-zoom-text'>Mobile App</h1>
+        </div>
       </div>
-      <div className='card-zoom'>
-        <div className='card-zoom-image'></div>
-        <div className='card-zoom-image bg-insta'></div>
-        <h1 className='card-zoom-text'>Squirrel App</h1>
+      <div className='relative'>
+        <div className='card-zoom'>
+          <div className='card-zoom-image'></div>
+          <div className='card-zoom-image bg-insta'></div>
+          <h1 className='card-zoom-text'>Squirrel App</h1>
+        </div>
       </div>
-      <div className='card-zoom'>
-        <div className='card-zoom-image'></div>
-        <div className='card-zoom-image bg-insta'></div>
-        <h1 className='card-zoom-text'>Shuber</h1>
+      <div className='relative'>
+        <div className='card-zoom'>
+          <div className='card-zoom-image'></div>
+          <div className='card-zoom-image bg-insta'></div>
+          <h1 className='card-zoom-text'>Shuber</h1>
+        </div>
       </div>
-    </Element>
+      <div className='relative'>
+        <div className='card-zoom'>
+          <div className='card-zoom-image'></div>
+          <div className='card-zoom-image bg-insta'></div>
+          <h1 className='card-zoom-text'>Shuber</h1>
+        </div>
+      </div>
+      <div className='relative'>
+        <div className='card-zoom'>
+          <div className='card-zoom-image'></div>
+          <div className='card-zoom-image bg-insta'></div>
+          <h1 className='card-zoom-text'>Shuber</h1>
+        </div>
+      </div>
+    </div>
   );
 };
 

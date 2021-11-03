@@ -13,8 +13,40 @@
   @apply relative flex flex-col justify-center items-center m-4 overflow-hidden shadow-xl w-80 h-80 rounded-2xl;
 }
 .card-zoom-text {
-  @apply absolute text-5xl font-black transition-all duration-500 ease-in-out transform scale-150 text-gray-50 opacity-60;
+  @apply cursor-pointer absolute text-5xl font-black transition-all duration-500 ease-in-out transform scale-150 text-gray-50 opacity-60;
 }
 .card-zoom-image {
-  @apply absolute w-full h-full transition-all duration-500 ease-in-out transform bg-center bg-cover;
+  @apply cursor-pointer absolute w-full h-full transition-all duration-500 ease-in-out transform bg-center bg-cover;
+}
+
+#navy{ 
+  transition: all .5s ease-in-out; 
+}
+
+#navy:hover { 
+  transform: scale(1.1); 
+  font-weight: bolder;
+  color: rgba(245, 158, 11, var(--tw-bg-opacity));
+}
+/* #imageSet{
+  box-shadow: 0 0 8px 8px white inset
+} */
+#email:hover{ 
+  background-color: rgba(252, 211, 77);
+}
+#email{
+  cursor: pointer;
+  position: absolute;
+  font-size: 35px;
+  text-shadow: 1px 1px 0px black;
+  box-shadow: 5px 5px 5px black;
+  color: white;
+  background-color: rgba(245, 158, 11);
+  padding-left: 5px;
+  padding-right: 10px;
+  justify-self: center;
+  margin-top: 130px;
+  border-radius: 100px;
+  padding-bottom: 5px;
+  transition: 0.3s;
 }

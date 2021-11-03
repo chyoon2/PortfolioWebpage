@@ -7,9 +7,23 @@ const navbar = ({ toggle }) => {
   return (
     <>
       <Nav className='flex justify-between items-center h-16 bg-white relative font-sans'>
-        <Link className='pl-8 font-bold' to='/'>
-          Chris Yoon
-        </Link>
+        <div className='pl-6'>
+          <a href='https://github.com/chyoon2?tab=repositories' id='navy'>
+            <i className='fab fa-github fa-2x'></i>
+          </a>
+          <a
+            className='pl-3'
+            href='https://www.linkedin.com/in/chrisyoonseattle/'
+            id='navy'>
+            <i className='fab fa-linkedin-in fa-2x'></i>
+          </a>
+          <a
+            className='pl-3'
+            href='https://www.instagram.com/birthday_chris'
+            id='navy'>
+            <i className='fab fa-instagram fa-2x'></i>
+          </a>
+        </div>
 
         <div className='px-4 cursor-pointer sm:hidden' onClick={toggle}>
           <svg
@@ -27,38 +41,41 @@ const navbar = ({ toggle }) => {
           </svg>
         </div>
 
-        <div className='pr-8 sm:block hidden'>
+        <div className='pr-8 sm:block hidden '>
           <LinkS
-            className='p-4 cursor-pointer hover:scale-50'
+            className='p-4 cursor-pointer'
+            id='navy'
             to='projects'
             activeClass='active'
             smooth={true}
             spy={true}
             offset={-50}
-            duration={1000}>
+            duration={500}>
             Projects
           </LinkS>
           <LinkS
             className='p-4 cursor-pointer'
-            to='#about'
+            id='navy'
+            to='about'
             activeClass='active'
             smooth={true}
             spy={true}
             offset={50}
-            duration={1000}>
+            duration={500}>
             About
           </LinkS>
           <LinkS
             className='p-4 cursor-pointer'
-            to='#about'
+            id='navy'
+            to='contact'
             activeClass='active'
             smooth={true}
             spy={true}
             offset={50}
-            duration={1000}>
+            duration={500}>
             Contact
           </LinkS>
-          <Link className='p-4' to='/Resume'>
+          <Link className='p-4' to='/Resume' id='navy'>
             Resume
           </Link>
         </div>
