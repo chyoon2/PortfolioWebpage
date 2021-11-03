@@ -1,0 +1,91 @@
+/* #hero {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  position:relative;
+  animation:sceneRotate;
+  transform: preserve-3d;
+
+} */
+/* #spaceman{
+  position:relative;
+  transform: rotate3d(1, 1, 1, 45deg);
+} */
+
+
+ .imageSpin{
+  transform-style: preserve-3d;
+  animation-name: rotate;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 30s;
+} 
+@keyframes rotate {
+  0% {
+    transform: rotate3d(0, 1, 0, 0);
+  }
+  
+  100% {
+    transform: rotate3d(0, 1, 0, 360deg);
+    }
+
+}
+
+ /*
+ @keyframes spin {
+  from{
+  transform: rotateY(0deg);
+  moz-transform: rotateY(0deg);
+  ms-transform: rotateY(0deg); 
+  }
+  to{
+  transform: rotateY(360deg);
+  moz-transform: rotateY(360deg); 
+  ms-transform: rotateY(360deg);
+  }
+ }
+ @-webkit-keyframes spin{
+  from{-webkit-transform: rotateY(0deg);}
+  to{-webkit-transform: rotateY(360deg);}
+ } */
+
+ /* #slidecaption {
+     -webkit-animation-name: spinner; 
+    -webkit-animation-timing-function: linear; 
+    -webkit-animation-iteration-count: infinite; 
+    -webkit-animation-duration: 2s; 
+    animation-name: spinner; 
+    animation-timing-function: linear; 
+    animation-iteration-count: infinite; 
+    animation-duration: 2s; 
+    -webkit-transform-style: preserve-3d; 
+    -moz-transform-style: preserve-3d; 
+    -ms-transform-style: preserve-3d; 
+    transform-style: preserve-3d;
+} */
+
+  /* WebKit and Opera browsers @-webkit-keyframes spinner {  */
+    /* from 
+    { 
+        -webkit-transform: rotateY(0deg); 
+    }  */
+    /* to { 
+        -webkit-transform: rotateY(-360deg); 
+    } 
+} /* all other browsers */ 
+/* @keyframes spinner { 
+    from { 
+        -moz-transform: rotateY(0deg); 
+        -ms-transform: rotateY(0deg); 
+        transform: rotateY(0deg); 
+    } 
+    to 
+    { 
+        -moz-transform: rotateY(-360deg); 
+        -ms-transform: rotateY(-360deg);  */
+        /* transform: rotateY(-360deg);  */ 
+    
+    /* }  */
+/* } */

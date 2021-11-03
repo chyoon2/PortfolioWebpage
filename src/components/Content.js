@@ -4,7 +4,7 @@ import { Element } from "react-scroll";
 const content = () => {
   return (
     <div
-      className='grid h-auto justify-items-center items-center sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xlg:grid-cols-4 mb-14 overflow-auto'
+      className='grid h-auto justify-items-center items-center sm:grid-cols-1 mb-14 overflow-auto'
       id='projects'>
       <div className='relative'>
         <div className='card-zoom'>
