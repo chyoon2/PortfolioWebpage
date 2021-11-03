@@ -56,7 +56,7 @@ const Contact = () => {
         <div
           id='email'
           style={styles.email}
-          onPress={() =>
+          onClick={() =>
             window.open(
               "mailto:chy.yoon@gmail.com?subject=Subject&body=Body%20goes%20here"
             )
