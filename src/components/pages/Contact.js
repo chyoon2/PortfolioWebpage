@@ -53,16 +53,12 @@ const Contact = () => {
 
         <img style={styles.image} alt='' src={srcontactphoto} />
         <div style={styles.large}>CONTACT</div>
-        <div
+        <input
+          type='button'
           id='email'
           style={styles.email}
-          onClick={() =>
-            window.open(
-              "mailto:chy.yoon@gmail.com?subject=Subject&body=Body%20goes%20here"
-            )
-          }>
-          chy.yoon@gmail.com
-        </div>
+          value='chy.yoon@gmail.com'
+          onclick="window.open('mailto:chy.yoon@gmail.com?subject=Howdy!');"></input>
       </div>
     </>
   );
