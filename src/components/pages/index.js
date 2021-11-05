@@ -3,7 +3,6 @@ import Hero from "../Hero";
 import Content from "../Content";
 import Contact from "./Contact";
 import Fire from "../Fire";
-import Toggle from "../Toggle";
 
 const Home = () => {
   return (
@@ -12,7 +11,6 @@ const Home = () => {
       <Content />
       <Contact /> */}
       <Fire />
-      <Toggle />
     </div>
   );
 };

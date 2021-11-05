@@ -27,8 +27,8 @@ const App = () => {
   });
   return (
     <div>
-      <Navbar toggle={toggle} />
-      <Dropdown isOpen={isOpen} toggle={toggle} />
+      {/* <Navbar toggle={toggle} />
+      <Dropdown isOpen={isOpen} toggle={toggle} /> */}
       <Switch>
         <Route path='/' exact component={home} />
         <Route path='/menu' component={menu} />
