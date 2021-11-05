@@ -1,15 +1,15 @@
 import { useState } from "react";
 import { Switch } from "@headlessui/react";
 
-function Toggle({ toggle }) {
+function Toggle({ setAppDong }) {
   const [enabled, setEnabled] = useState(false);
 
   const manyfxn = () => {
     setEnabled(!enabled);
     if (enabled) {
-      return toggle("fire-on");
+      return setAppDong("fire-on");
     } else {
-      return toggle("fire-off");
+      return setAppDong("fire-off");
     }
   };
 

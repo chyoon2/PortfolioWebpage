@@ -1,16 +1,16 @@
 import React from "react";
-import Hero from "../Hero";
-import Content from "../Content";
+import Hero from "./Hero";
+import Content from "./Content";
 import Contact from "./Contact";
 import Fire from "../Fire";
 
-const Home = () => {
+const Home = ({ setAppDong, appDong }) => {
   return (
     <div>
-      {/* <Hero />
+      <Fire setAppDong={setAppDong} appDong={appDong} />
+      {/* <Hero /> */}
       <Content />
-      <Contact /> */}
-      <Fire />
+      <Contact />
     </div>
   );
 };

@@ -1,14 +1,17 @@
 import React, { useState, useEffect } from "react";
 import "../css/header.css";
 import Navbar from "./navbar/Navbar";
-import home from "./pages/index";
+import Home from "./pages/index";
 import { Switch, Route } from "react-router-dom";
 import about from "./pages/About";
 import menu from "./pages/Menu";
 import Dropdown from "./Dropdown";
+import "../css/app.css";
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [appDong, setAppDong] = useState("fire-on");
+  console.log(appDong);
 
   const toggle = () => {
     setIsOpen(!isOpen);
@@ -26,11 +29,14 @@ const App = () => {
     };
   });
   return (
-    <div>
-      {/* <Navbar toggle={toggle} />
-      <Dropdown isOpen={isOpen} toggle={toggle} /> */}
+    <div className={`${appDong}`}>
+      <Navbar toggle={toggle} />
+      <Dropdown isOpen={isOpen} toggle={toggle} />
       <Switch>
-        <Route path='/' exact component={home} />
+        <Route path='/' exact>
+          <Home setAppDong={setAppDong} appDong={appDong} />
+        </Route>
+
         <Route path='/menu' component={menu} />
         <Route path='/about' component={about} />
       </Switch>

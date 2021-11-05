@@ -1,58 +1,51 @@
-import React, { useState } from "react";
+import React from "react";
 import "../css/fire.css";
 import Toggle from "./Toggle";
 
-// const handleToggle = () => {
-
-// const [toggle, setToggle] = useState(false);
-// const toggled = toggle ? "fireOn" : "fireOff";
-
-const Fire = () => {
-  const [dong, setdong] = useState("fire-on");
-  console.log(dong);
-
+const Fire = ({ appDong, setAppDong }) => {
   return (
     <div className='entire'>
-      <div className={`${dong}`}>
-        <div class='section-center'>
-          <div class='moon'>
+      <div className={`${appDong}`}>
+        <div className='section-center'>
+          <div className='moon'>
             <div></div>
             <div></div>
             <div></div>
           </div>
-          <div class='shooting-star'></div>
-          <div class='shooting-star-2'></div>
-          <div class='star'></div>
-          <div class='star snd'></div>
-          <div class='star trd'></div>
-          <div class='star fth'></div>
-          <div class='star fith'></div>
-          <div class='circle'></div>
-          <div class='wood-circle'></div>
-          <div class='wood'></div>
-          <div class='tree-1'></div>
-          <div class='tree-2'></div>
-          <div class='fire'>
+          <div className='shooting-star'></div>
+          <div className='shooting-star-2'></div>
+          <div className='star'></div>
+          <div className='star snd'></div>
+          <div className='star trd'></div>
+          <div className='star fth'></div>
+          <div className='star fith'></div>
+          <div className='circle'></div>
+          <div className='wood-circle'></div>
+          <div className='wood'></div>
+          <div className='tree-1'></div>
+          <div className='tree-2'></div>
+          <div className='fire'>
             <span></span>
             <span></span>
             <span></span>
           </div>
-          <div class='smoke'>
-            <span class='s-0'></span>
-            <span class='s-1'></span>
-            <span class='s-2'></span>
-            <span class='s-3'></span>
-            <span class='s-4'></span>
-            <span class='s-5'></span>
-            <span class='s-6'></span>
-            <span class='s-7'></span>
-            <span class='s-8'></span>
-            <span class='s-9'></span>
+          <div className='smoke'>
+            <span className='s-0'></span>
+            <span className='s-1'></span>
+            <span className='s-2'></span>
+            <span className='s-3'></span>
+            <span className='s-4'></span>
+            <span className='s-5'></span>
+            <span className='s-6'></span>
+            <span className='s-7'></span>
+            <span className='s-8'></span>
+            <span className='s-9'></span>
           </div>
         </div>
       </div>
+
       <div className='switch-wrap'>
-        <Toggle toggle={setdong} />
+        <Toggle setAppDong={setAppDong} />
       </div>
     </div>
   );

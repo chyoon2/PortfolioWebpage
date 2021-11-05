@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import caferacer from "../img/caferacer.png";
-import "../css/hero.css";
+import caferacer from "../../img/caferacer.png";
+import "../../css/hero.css";
 
 const Hero = () => {
   return (
