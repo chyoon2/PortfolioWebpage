@@ -29,18 +29,20 @@ const App = () => {
     };
   });
   return (
-    <div className={`${appDong}`}>
-      <Navbar toggle={toggle} />
-      <Dropdown isOpen={isOpen} toggle={toggle} />
-      <Switch>
-        <Route path='/' exact>
-          <Home setAppDong={setAppDong} appDong={appDong} />
-        </Route>
+    <>
+      <div className={`${appDong}`}>
+        <Navbar toggle={toggle} />
+        <Dropdown isOpen={isOpen} toggle={toggle} />
+        <Switch>
+          <Route path='/' exact>
+            <Home setAppDong={setAppDong} appDong={appDong} />
+          </Route>
 
-        <Route path='/menu' component={menu} />
-        <Route path='/about' component={about} />
-      </Switch>
-    </div>
+          <Route path='/menu' component={menu} />
+          <Route path='/about' component={about} />
+        </Switch>
+      </div>
+    </>
   );
 };
 

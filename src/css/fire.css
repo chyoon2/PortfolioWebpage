@@ -3,7 +3,9 @@
   display: block;
   overflow: hidden;
   height: 100vh;
- 
+  margin-top: 0;
+  position:relative;
+  /* z-index: 0; */
 }
 .entire .fire-off .fire-on{
   opacity: 0;
