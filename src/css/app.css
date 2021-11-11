@@ -1,7 +1,7 @@
-.fire-on > div { 
+.fire-on > div {
   background: linear-gradient(#103c50, black);
   /* z-index: -1; */
 }
-.fire-off > div { 
-  background: linear-gradient(#0a171d, #000);  
+.fire-off > div {
+  background: linear-gradient(#0a171d, #000);
 }
