@@ -10,8 +10,7 @@ import "../css/app.css";
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [appDong, setAppDong] = useState("fire-on");
-  console.log(appDong);
+  const [moon, setMoon] = useState("moon-off");
 
   const toggle = () => {
     setIsOpen(!isOpen);
@@ -30,12 +29,12 @@ const App = () => {
   });
   return (
     <>
-      <div className={`${appDong}`}>
+      <div className='appContainer'>
         <Navbar toggle={toggle} />
         <Dropdown isOpen={isOpen} toggle={toggle} />
         <Switch>
           <Route path='/' exact>
-            <Home setAppDong={setAppDong} appDong={appDong} />
+            <Home setMoon={setMoon} moon={moon} />
           </Route>
 
           <Route path='/menu' component={menu} />

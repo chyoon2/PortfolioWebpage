@@ -1,15 +1,15 @@
 import { useState } from "react";
 import { Switch } from "@headlessui/react";
 
-function Toggle({ setAppDong }) {
+function Toggle({ setMoon }) {
   const [enabled, setEnabled] = useState(false);
 
   const manyfxn = () => {
     setEnabled(!enabled);
     if (enabled) {
-      return setAppDong("fire-on");
+      return setMoon("moon-off");
     } else {
-      return setAppDong("fire-off");
+      return setMoon("moon-on");
     }
   };
 
@@ -26,8 +26,8 @@ function Toggle({ setAppDong }) {
       <span
         className={`${
           enabled
-            ? "translate-x-8 ease-in-out duration-700"
-            : "translate-x-1 ease-in-out duration-700"
+            ? "translate-x-8 ease-in-out duration-500"
+            : "translate-x-1 ease-in-out duration-500"
         } relative ease-in ease-out inline-block w-5 h-5 transform bg-white rounded-full`}
       />
     </Switch>

@@ -1,6 +1,7 @@
-.fire-on > div {
+ .appContainer {
   background: linear-gradient(#0a171d, #000);
 }
-.fire-off > div {
+/*
+.moon-off > div {
   background: linear-gradient(#0a171d, #000);
-}
+} */

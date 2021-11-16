@@ -1,12 +1,13 @@
 import React from "react";
 import "../css/fire.css";
+import "../css/arrows.css";
 import Toggle from "./Toggle";
 
-const Fire = ({ appDong, setAppDong }) => {
+const Fire = ({ moon, setMoon }) => {
   return (
     <div className='entire'>
       <div className='section-center'>
-        <div className='moon'>
+        <div className={`${moon}`}>
           <div></div>
           <div></div>
           <div></div>
@@ -34,33 +35,15 @@ const Fire = ({ appDong, setAppDong }) => {
       <div className='star eightt'></div>
 
       <div className='switch-wrap'>
-        <Toggle setAppDong={setAppDong} />
+        <Toggle setMoon={setMoon} />
+      </div>
+      <div class='arrowContainer'>
+        <div class='chevron'></div>
+        <div class='chevron'></div>
+        <div class='chevron'></div>
       </div>
     </div>
   );
 };
 
 export default Fire;
-
-// <div className='entire'>
-// <div className={`${appDong}`}>
-//   <div className='section-center'>
-//     <div className='moon'>
-//       <div></div>
-//       <div></div>
-//       <div></div>
-//     </div>
-//     <div className='shooting-star'></div>
-//     <div className='shooting-star-2'></div>
-//     <div className='star'></div>
-//     <div className='star snd'></div>
-//     <div className='star trd'></div>
-//     <div className='star fth'></div>
-//     <div className='star fith'></div>
-//   </div>
-// </div>
-
-// <div className='switch-wrap'>
-//   <Toggle setAppDong={setAppDong} />
-// </div>
-// </div>

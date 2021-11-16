@@ -4,10 +4,10 @@ import Content from "./Content";
 import Contact from "./Contact";
 import Fire from "../Fire";
 
-const Home = ({ setAppDong, appDong }) => {
+const Home = ({ setMoon, moon }) => {
   return (
     <div>
-      <Fire setAppDong={setAppDong} appDong={appDong} />
+      <Fire setMoon={setMoon} moon={moon} />
       {/* <Hero /> */}
       <Content />
       <Contact />
