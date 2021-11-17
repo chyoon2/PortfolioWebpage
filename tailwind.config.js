@@ -3,7 +3,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'className'
   theme: {
     extend: {
-      backgroundColor: (theme) => ({
+      Color: (theme) => ({
         primary: "#103c50",
       }),
       backgroundImage: {

@@ -146,10 +146,12 @@
   opacity: 0.4;
 }
 .moon-on {
+  animation-delay: 2s;
   -webkit-transition: all 2000ms linear;
   transition: all 2000ms linear;
 }
 .moon-off {
+  animation-delay: 2s;
   -webkit-transition: all 2000ms linear;
   transition: all 2000ms linear;
 }

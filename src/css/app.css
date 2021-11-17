@@ -1,5 +1,6 @@
  .appContainer {
-  background: linear-gradient(#0a171d, #000);
+  /* background: linear-gradient(#0a171d, #000); */
+  background-color: black;
 }
 /*
 .moon-off > div {
