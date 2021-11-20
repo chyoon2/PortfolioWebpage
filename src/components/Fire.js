@@ -37,13 +37,14 @@ const Fire = ({ moon, setMoon }) => {
       <div className='switch-wrap'>
         <Toggle setMoon={setMoon} />
       </div>
-      <div class='arrowContainer'>
-        <div class='chevron'></div>
-        <div class='chevron'></div>
-        <div class='chevron'></div>
-      </div>
     </div>
   );
 };
 
 export default Fire;
+
+// <div class='arrowContainer'>
+// <div class='chevron'></div>
+// <div class='chevron'></div>
+// <div class='chevron'></div>
+// </div>

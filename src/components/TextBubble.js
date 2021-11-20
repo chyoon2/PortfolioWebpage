@@ -1,12 +1,11 @@
 import React from "react";
+import "../css/textbubble.css";
 
 const TextBubble = () => {
   return (
-    <div>
-      <div className='typing'>
-        <span class='circle scaling'></span>
-        <span class='circle scaling'></span>
-        <span class='circle scaling'></span>
+    <div className='text-thinking'>
+      <div className='text-bubble'>
+        <span className='text-msg'>Hey I'm Chris. Welcome to the page!</span>
       </div>
     </div>
   );

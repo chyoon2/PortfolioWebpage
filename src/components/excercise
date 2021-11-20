@@ -42,7 +42,7 @@
    background: #e9e5d5;
  }
  .switched {
-   border-color: #777 !important;
+   border: #777 !important;
    background: #000 !important;
  }
 

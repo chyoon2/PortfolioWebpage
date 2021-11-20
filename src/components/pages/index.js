@@ -13,7 +13,7 @@ const Home = ({ setMoon, moon }) => {
         <>
           <Intro />
           <Content />
-          <Contact />
+          {/* <Contact /> */}
         </>
       );
     }

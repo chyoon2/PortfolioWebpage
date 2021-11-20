@@ -8,7 +8,7 @@ module.exports = {
       }),
       backgroundImage: {
         insta:
-          "url('https://www.howtogeek.com/wp-content/uploads/2020/04/Instagram-feed-on-browser.png?trim=1,1&bg-color=000&pad=1,1')",
+          "url('https://www.howtogeek.com/wp-content/uploads/2020/04/Instagram-feed-on-browser.png?trim=1,1&bg=000&pad=1,1')",
       },
     },
   },

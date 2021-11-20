@@ -147,6 +147,7 @@
 }
 .moon-on {
   animation-delay: 2s;
+
   -webkit-transition: all 2000ms linear;
   transition: all 2000ms linear;
 }
