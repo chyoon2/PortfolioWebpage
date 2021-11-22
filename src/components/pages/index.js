@@ -20,9 +20,10 @@ const Home = ({ setMoon, moon }) => {
   };
   return (
     <div>
-      <Fire setMoon={setMoon} moon={moon} />
+      {/* <Fire setMoon={setMoon} moon={moon} /> */}
       {/* <Hero /> */}
-      {renderPage()}
+      {/* {renderPage()} */}
+      <Intro />
     </div>
   );
 };
