@@ -14,7 +14,7 @@ const Intro = () => {
   return (
     <div style={styles.intro}>
       <ThinkingBubble />
-      <TextBubble />
+      {/* <TextBubble /> */}
     </div>
   );
 };
