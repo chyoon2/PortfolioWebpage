@@ -30,6 +30,7 @@ const App = () => {
   return (
     <>
       <div className='appContainer'>
+        <Navbar />;
         <Home setMoon={setMoon} moon={moon} />
       </div>
     </>
@@ -38,19 +39,19 @@ const App = () => {
 
 export default App;
 
-{
-  /* <Navbar toggle={toggle} /> */
-}
-{
-  /* <Dropdown isOpen={isOpen} toggle={toggle} /> */
-}
-{
-  /* <Switch>
-          <Route path='/' exact>
-            <Home setMoon={setMoon} moon={moon} />
-          </Route>
+// {
+//   <Navbar toggle={} />;
+// }
+// {
+/* <Dropdown isOpen={isOpen} toggle={toggle} /> */
+// }
+// {
+//   /* <Switch>
+//           <Route path='/' exact>
+//             <Home setMoon={setMoon} moon={moon} />
+//           </Route>
 
-          <Route path='/menu' component={menu} />
-          <Route path='/about' component={about} />
-        </Switch> */
-}
+//           <Route path='/menu' component={menu} />
+//           <Route path='/about' component={about} />
+//         </Switch> */
+// }

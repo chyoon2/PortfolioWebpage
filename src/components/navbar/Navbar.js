@@ -3,25 +3,45 @@ import { Link } from "react-router-dom";
 import { NavbarContainer, Nav } from "./NavbarElements";
 import { Link as LinkS } from "react-scroll";
 import "../../css/header.css";
+import profilePic from "../../img/profilePic.jpg";
+
+const styles = {
+  nav: {},
+};
+
 const navbar = ({ toggle }) => {
   return (
-    <Nav className='flex justify-between items-center h-16 bg-transparent absolute font-sans'>
+    <Nav
+      className='flex justify-between items-center h-44 opacity-90 absolute font-sans'
+      style={{ background: "#393939" }}>
       <div className='pl-6'>
         <a href='https://github.com/chyoon2?tab=repositories' id='navy'>
-          <i className='fab fa-github fa-2x'></i>
+          <span style={{ color: "#ADD8E6" }}>
+            <i className='fab fa-github fa-2x'></i>
+          </span>
         </a>
         <a
           className='pl-3'
           href='https://www.linkedin.com/in/chrisyoonseattle/'
           id='navy'>
-          <i className='fab fa-linkedin-in fa-2x'></i>
+          <span style={{ color: "#ADD8E6" }}>
+            <i className='fab fa-linkedin-in fa-2x'></i>
+          </span>
         </a>
         <a
           className='pl-3'
           href='https://www.instagram.com/birthday_chris'
           id='navy'>
-          <i className='fab fa-instagram fa-2x'></i>
+          <span style={{ color: "#ADD8E6" }}>
+            <i className='fab fa-instagram fa-2x'></i>
+          </span>
         </a>
+      </div>
+
+      <div>
+        <span>
+          <img alt='profile' src={profilePic}></img>
+        </span>
       </div>
 
       <div className='px-4 cursor-pointer sm:hidden' onClick={toggle}>

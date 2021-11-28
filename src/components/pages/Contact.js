@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import srcontactphoto from "../../img/srcontactphoto.jpg";
+import profilePic from "../../img/profilePic.jpg";
 import "../../css/index.css";
 import { Link } from "react-router-dom";
 
@@ -52,7 +52,7 @@ const Contact = () => {
           id='blackbox'
           className='bg-black h-3/6 w-screen self-center'></div>
 
-        <img style={styles.image} alt='' src={srcontactphoto} />
+        <img style={styles.image} alt='' src={profilePic} />
         <div style={styles.large}>CONTACT</div>
         <Link
           type='button'

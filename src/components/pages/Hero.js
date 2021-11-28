@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <div className='bg-white' id='hero'>
       <div class='caferacer'>
-        <img alt='' class='imageSpin' src={caferacer} />
+        <img alt='' className='imageSpin' src={caferacer} />
       </div>
     </div>
   );
