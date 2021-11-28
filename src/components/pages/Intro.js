@@ -4,7 +4,7 @@ import ThinkingBubble from "../ThinkingBubble";
 
 const styles = {
   intro: {
-    height: "200vh",
+    height: "100vh",
     background: "black",
     position: "relative",
   },

@@ -5,7 +5,7 @@ import "../../css/hero.css";
 
 const Hero = () => {
   return (
-    <div id='hero'>
+    <div className='bg-white' id='hero'>
       <div class='caferacer'>
         <img alt='' class='imageSpin' src={caferacer} />
       </div>

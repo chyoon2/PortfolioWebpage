@@ -21,7 +21,7 @@ const Home = ({ setMoon, moon }) => {
   return (
     <div>
       {/* <Fire setMoon={setMoon} moon={moon} /> */}
-      {/* <Hero /> */}
+      <Hero />
       {/* {renderPage()} */}
       <Intro />
     </div>
